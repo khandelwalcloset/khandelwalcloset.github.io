@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhandelwalCloset | Premium Jaipur Fashion Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* ----- VARIABLES ----- */
+:root {
+  --primary: #8A2B8A;
+  --secondary: #FF85B3;
+  --accent: #FFB3C6;
+  --light: #FFF0F5;
+  --dark: #5D2D5B;
+  --text: #333333;
+  --shadow: 0 4px 20px rgba(0,0,0,0.1);
+  --transition: all 0.3s ease;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--light); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+/* --- HEADER --- */
+header { 
+  background: linear-gradient(135deg, #FDE2FF, #FFC1E3); 
+  padding: 15px 0; 
+  position: sticky; 
+  top: 0; 
+  z-index: 1000; 
+  box-shadow: var(--shadow); 
+  transition: var(--transition); 
+}
+.header-content { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+.logo { 
+  width: 70px; 
+  height: 70px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 2px solid #fff; 
+  box-shadow: var(--shadow); 
+}
+.shop-name { 
+  font-family: 'Playfair Display', serif; 
+  font-size: 28px; 
+  font-weight: 800; 
+  color: var(--dark); 
+}
+
+/* NAVIGATION */
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  gap: 15px; 
+}
+nav li a { 
+  font-weight: 600; 
+  padding: 10px 15px; 
+  border-radius: 8px; 
+  color: var(--dark); 
+  text-decoration: none; 
+  transition: var(--transition);
+}
+nav li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.cta-button { 
+  background: linear-gradient(135deg, var(--secondary), var(--accent)); 
+  color: white; 
+  border-radius: 30px; 
+  padding: 10px 20px; 
+  transition: var(--transition);
+}
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Mobile Navigation */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(255, 193, 227, 0.7), rgba(255, 193, 227, 0.7)), url('https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg');
+  background-size: cover;
+  background-position: center 30%;
+  color: var(--dark);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.hero-btn.primary {
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  color: white;
+}
+.hero-btn.secondary {
+  background: transparent;
+  border: 2px solid var(--dark);
+  color: var(--dark);
+}
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* --- CATEGORY & PRODUCTS --- */
+.category-section { 
+  padding: 50px 20px; 
+  background: var(--light); 
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--dark);
+  position: relative;
+}
+.section-title:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+  margin: 15px auto;
+}
+.category-buttons { 
+  display: flex; 
+  gap: 10px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  margin-bottom: 30px; 
+}
+.category-btn { 
+  padding: 10px 20px; 
+  border-radius: 30px; 
+  border: none; 
+  cursor: pointer; 
+  font-weight: 600;
+  background: white;
+  color: var(--dark);
+  border: 1px solid var(--accent);
+  transition: var(--transition);
+}
+.category-btn:hover, .category-btn.active { 
+  background: linear-gradient(135deg, var(--secondary), var(--accent)); 
+  color: #fff; 
+}
+.products-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 25px; 
+}
+.product-card { 
+  background: #fff; 
+  border-radius: 15px; 
+  box-shadow: var(--shadow); 
+  overflow: hidden; 
+  cursor: pointer; 
+  transition: var(--transition); 
+  position: relative;
+}
+.product-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.product-card img { 
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  transition: var(--transition);
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.product-info { 
+  padding: 15px; 
+  text-align: center; 
+}
+.product-info h3 { 
+  font-size: 1.1rem; 
+  color: var(--dark); 
+  margin-bottom: 8px;
+}
+.product-price {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.product-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.product-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+}
+.details-btn {
+  background: transparent;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+.product-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* --- FEATURES SECTION --- */
+.features {
+  padding: 60px 20px;
+  background: white;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.feature {
+  text-align: center;
+  padding: 20px;
+}
+.feature i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+.feature h3 {
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+/* --- LIGHTBOX --- */
+.lightbox { 
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background: rgba(0,0,0,0.9); 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+}
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 80vh;
+}
+.lightbox img { 
+  max-width: 100%; 
+  max-height: 80vh; 
+  border-radius: 10px; 
+  object-fit: contain;
+}
+.lightbox-controls { 
+  margin-top: 15px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.lightbox button { 
+  background: none; 
+  border: none; 
+  color: white; 
+  font-size: 2rem; 
+  cursor: pointer; 
+  transition: var(--transition);
+}
+.lightbox button:hover {
+  color: var(--accent);
+}
+.lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 1.8rem;
+}
+.image-counter {
+  color: white;
+  font-size: 1rem;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials {
+  padding: 60px 20px;
+  background: white;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonial {
+  background: var(--light);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.author-details h4 {
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+.author-details p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* --- CONTACT --- */
+.contact-section { 
+  padding: 60px 20px; 
+  background: var(--light); 
+}
+.contact-content { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact-detail i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  width: 30px;
+}
+.contact-form { 
+  background: #fff; 
+  padding: 30px; 
+  border-radius: 15px; 
+  box-shadow: var(--shadow); 
+}
+.form-group { 
+  margin-bottom: 15px; 
+}
+label { 
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: 600; 
+}
+input, textarea { 
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  font-family: 'Poppins', sans-serif;
+  transition: var(--transition);
+}
+input:focus, textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(138, 43, 138, 0.2);
+}
+textarea { 
+  min-height: 120px; 
+  resize: vertical;
+}
+.submit-btn { 
+  background: linear-gradient(135deg, var(--secondary), var(--accent)); 
+  border: none; 
+  color: #fff; 
+  padding: 12px; 
+  border-radius: 30px; 
+  font-weight: 600; 
+  width: 100%; 
+  cursor: pointer; 
+  transition: var(--transition);
+}
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* --- FOOTER --- */
+footer { 
+  background: var(--dark); 
+  color: #fff; 
+  padding: 40px 20px 20px; 
+  text-align: center; 
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+}
+.footer-links h3, .footer-newsletter h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.footer-links a:hover {
+  color: var(--accent);
+  padding-left: 5px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+.newsletter-form button {
+  background: var(--secondary);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  background: var(--secondary);
+  transform: translateY(-3px);
+}
+.copyright {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+/* --- BACK TO TOP BUTTON --- */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 999;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  background: var(--dark);
+  transform: translateY(-3px);
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  nav.active {
+    max-height: 300px;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-logo {
+    align-items: center;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-name {
+    font-size: 1.5rem;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-content">
+    <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" class="logo" alt="Khandelwal Closet Logo">
+    <span class="shop-name">Khandelwal Closet</span>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="mainNav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#category">Collection</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://wa.me/919772723751" class="cta-button">Order Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <h1>Elegant Fashion From The Heart of Jaipur</h1>
+  <p>Discover our exquisite collection of Kurtis, Sets, and Cord Fashion - crafted with tradition and modern elegance</p>
+  <div class="hero-buttons">
+    <a href="#category" class="hero-btn primary">Shop Collection</a>
+    <a href="#contact" class="hero-btn secondary">Contact Us</a>
+  </div>
+</section>
+
+<!-- CATEGORY -->
+<section class="category-section" id="category">
+  <div class="container">
+    <h2 class="section-title">Our Collection</h2>
+    <div class="category-buttons">
+      <button class="category-btn active" onclick="showCategory('all')">All</button>
+      <button class="category-btn" onclick="showCategory('kurti')">Only Kurti</button>
+      <button class="category-btn" onclick="showCategory('kurti2')">2pcs Kurti</button>
+      <button class="category-btn" onclick="showCategory('kurti3')">3pcs Kurti Set</button>
+      <button class="category-btn" onclick="showCategory('cord')">Cord Set</button>
+    </div>
+    <div class="products-grid" id="products-container"></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="features-grid">
+    <div class="feature">
+      <i class="fas fa-truck"></i>
+      <h3>Free Shipping</h3>
+      <p>Free delivery on orders above ₹1999</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-exchange-alt"></i>
+      <h3>Easy Returns</h3>
+      <p>7-day easy return policy</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-award"></i>
+      <h3>Premium Quality</h3>
+      <p>Handpicked fabrics and designs</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-headset"></i>
+      <h3>Support 24/7</h3>
+      <p>Dedicated customer care</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-text">
+          "The quality of the fabric and stitching is exceptional. I've received countless compliments on my kurti from Khandelwal Closet!"
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Sharma">
+          <div class="author-details">
+            <h4>Priya Sharma</h4>
+            <p>Jaipur</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">
+          "Fast delivery and perfect fit. The colors are exactly as shown in the pictures. Will definitely order again!"
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Neha Gupta">
+          <div class="author-details">
+            <h4>Neha Gupta</h4>
+            <p>Delhi</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-text">
+          "Their cord sets are perfect for Jaipur's weather. Light, comfortable, and stylish. Highly recommended!"
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sunita Mehta">
+          <div class="author-details">
+            <h4>Sunita Mehta</h4>
+            <p>Mumbai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <img src="" id="lightbox-img" alt="Product">
+    <button class="lightbox-close" onclick="closeLightbox()">&#10006;</button>
+  </div>
+  <div class="lightbox-controls">
+    <button onclick="prevImage()">&#10094;</button>
+    <span class="image-counter" id="image-counter">1/6</span>
+    <button onclick="nextImage()">&#10095;</button>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-detail">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Jaipur, Rajasthan, India</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h3>Phone</h3>
+            <p>+91 9772723751</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>info@khandelwalcloset.com</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Working Hours</h3>
+            <p>Mon-Sat: 10AM - 7PM</p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919772723751"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+          <p id="formMessage" style="color:green;display:none;margin-top:15px;">✅ Thank you! Your message has been sent.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg" alt="Khandelwal Closet">
+      <p>Premium traditional and contemporary fashion from Jaipur.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#category">Collection</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe to get updates on new collections and offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919772723751"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 Khandelwal Closet. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- SCRIPT -->
+<script>
+const categories = {
+  kurti: [
+    {
+      title:"Embroidered Cotton Kurti", 
+      price: "₹1,299",
+      description: "Hand-embroidered cotton kurti with intricate detailing",
+      imgs:["https://images.pexels.com/photos/1456705/pexels-photo-1456705.jpeg","https://images.pexels.com/photos/916337/pexels-photo-916337.jpeg","https://images.pexels.com/photos/2065189/pexels-photo-2065189.jpeg","https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg","https://images.pexels.com/photos/2065195/pexels-photo-2065195.jpeg","https://images.pexels.com/photos/2065193/pexels-photo-2065193.jpeg"]
+    },
+    {
+      title:"Printed Silk Kurti", 
+      price: "₹1,599",
+      description: "Elegant silk kurti with traditional prints",
+      imgs:["https://images.pexels.com/photos/10189186/pexels-photo-10189186.jpeg","https://images.pexels.com/photos/10189187/pexels-photo-10189187.jpeg","https://images.pexels.com/photos/10189188/pexels-photo-10189188.jpeg","https://images.pexels.com/photos/10189189/pexels-photo-10189189.jpeg","https://images.pexels.com/photos/10189190/pexels-photo-10189190.jpeg","https://images.pexels.com/photos/10189191/pexels-photo-10189191.jpeg"]
+    },
+  ],
+  kurti2: [
+    {
+      title:"Designer 2-Piece Set", 
+      price: "₹2,199",
+      description: "Contemporary 2-piece set with dupatta",
+      imgs:["https://images.pexels.com/photos/2065188/pexels-photo-2065188.jpeg","https://images.pexels.com/photos/2065187/pexels-photo-2065187.jpeg","https://images.pexels.com/photos/2065186/pexels-photo-2065186.jpeg","https://images.pexels.com/photos/2065185/pexels-photo-2065185.jpeg","https://images.pexels.com/photos/2065184/pexels-photo-2065184.jpeg","https://images.pexels.com/photos/2065183/pexels-photo-2065183.jpeg"]
+    },
+  ],
+  kurti3: [
+    {
+      title:"Premium 3-Piece Set", 
+      price: "₹2,899",
+      description: "Elegant 3-piece set perfect for special occasions",
+      imgs:["https://images.pexels.com/photos/2065198/pexels-photo-2065198.jpeg","https://images.pexels.com/photos/2065197/pexels-photo-2065197.jpeg","https://images.pexels.com/photos/2065196/pexels-photo-2065196.jpeg","https://images.pexels.com/photos/2065194/pexels-photo-2065194.jpeg","https://images.pexels.com/photos/2065192/pexels-photo-2065192.jpeg","https://images.pexels.com/photos/2065191/pexels-photo-2065191.jpeg"]
+    },
+  ],
+  cord: [
+    {
+      title:"Designer Cord Set", 
+      price: "₹1,899",
+      description: "Comfortable and stylish cord set perfect for summer",
+      imgs:["https://images.pexels.com/photos/2065202/pexels-photo-2065202.jpeg","https://images.pexels.com/photos/2065201/pexels-photo-2065201.jpeg","https://images.pexels.com/photos/2065203/pexels-photo-2065203.jpeg","https://images.pexels.com/photos/2065204/pexels-photo-2065204.jpeg","https://images.pexels.com/photos/2065205/pexels-photo-2065205.jpeg","https://images.pexels.com/photos/2065206/pexels-photo-2065206.jpeg"]
+    },
+  ]
+};
+
+let currentImages = [], currentIndex = 0;
+
+// Mobile menu toggle
+document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+  document.getElementById('mainNav').classList.toggle('active');
+});
+
+// Back to top button
+window.addEventListener('scroll', function() {
+  const backToTop = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+document.getElementById('backToTop').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+// Form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const formMessage = document.getElementById('formMessage');
+  formMessage.style.display = 'block';
+  
+  // Hide message after 5 seconds
+  setTimeout(function() {
+    formMessage.style.display = 'none';
+  }, 5000);
+  
+  // Reset form
+  this.reset();
+});
+
+function showCategory(cat){
+  document.querySelectorAll(".category-btn").forEach(btn=>btn.classList.remove("active"));
+  event.target.classList.add("active");
+  const container = document.getElementById("products-container");
+  container.innerHTML="";
+  let items = cat==="all" ? Object.values(categories).flat() : categories[cat];
+  items.forEach((item,i)=>{
+    container.innerHTML += `
+      <div class="product-card">
+        <img src="${item.imgs[0]}" alt="${item.title}">
+        <div class="product-info">
+          <h3>${item.title}</h3>
+          <div class="product-price">${item.price}</div>
+          <div class="product-description">${item.description}</div>
+          <div class="product-actions">
+            <button class="product-btn whatsapp-btn" onclick="window.open('https://wa.me/919772723751?text=Hi! I am interested in ${encodeURIComponent(item.title)}', '_blank')">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+            <button class="product-btn details-btn" onclick="openLightbox(${i}, '${cat}')">
+              <i class="fas fa-eye"></i> View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+
+function openLightbox(index, category) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const imageCounter = document.getElementById('image-counter');
+  
+  // Get the correct product based on category
+  const products = category === 'all' ? Object.values(categories).flat() : categories[category];
+  currentImages = products[index].imgs;
+  currentIndex = 0;
+  
+  lightboxImg.src = currentImages[currentIndex];
+  imageCounter.textContent = `${currentIndex + 1}/${currentImages.length}`;
+  lightbox.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function nextImage() {
+  if (currentImages.length > 0) {
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    document.getElementById('lightbox-img').src = currentImages[currentIndex];
+    document.getElementById('image-counter').textContent = `${currentIndex + 1}/${currentImages.length}`;
+  }
+}
+
+function prevImage() {
+  if (currentImages.length > 0) {
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    document.getElementById('lightbox-img').src = currentImages[currentIndex];
+    document.getElementById('image-counter').textContent = `${currentIndex + 1}/${currentImages.length}`;
+  }
+}
+
+// Close lightbox when clicking outside the image
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeLightbox();
+  }
+});
+
+// Initialize with all products
+showCategory('all');
+</script>
+</body>
+</html>
